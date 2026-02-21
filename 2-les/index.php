@@ -44,14 +44,85 @@ if($b == 20) {
     echo " A больше B";
 }*/
 
-$light = 'red';
-
+$light = 'yellow';
+/*
 if( $light == 'green' ){
 	echo 'We may go';
 } elseif( $light == 'yellow' ){
     echo 'Wait';
 }elseif( $light == 'red' ){
     echo 'Stop';
-}
+}*/
+
+
+$light = 'red';
+/*
+switch ($light) {
+    case 'green':
+        echo 'We may go';
+        break;
+    case 'yellow':
+        echo 'Wait';
+        break;
+    case 'red':
+        echo 'Stop';
+        break;
+    default:
+        echo 'Wrong color';
+}*/
+/*
+do {
+    echo "Hello world!<br>";
+} while (false);*/
+ /*$i =1;
+while ($i < 5) {
+     ++$i;
+    echo "Hello world!<br>";
+    
+}*/
+ //$a = 0;
+ /*
+for ($i = 0; $i < 5; $i++) {
+   echo  $i;
+   echo "Hello world!<br>";
+}*/
+/*
+$a = [1, 2, 3, 4, "Hello world!"];
+var_dump($a);
+
+echo "<br>";
+echo $a[3];
+
+echo "<br>";
+foreach ($a as $key =>$value) {
+    echo $key . " => " . $value . "<br>";
+}*/
+
+$arr2 = [
+	1,
+	2,
+	[
+		'banana',
+		'orange',
+		'apple'
+	],
+	4,
+	'cat',
+	6,
+	7,
+	8,
+	9,
+	10,];
+echo "<pre>";
+print_r($arr2);
+echo "</pre>";
+
+echo $arr2[2][0];
+
+
+
+
+
+
 
 ?>
