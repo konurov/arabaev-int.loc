@@ -66,14 +66,27 @@ function my_substr1($str, $start, $length)
     return $result;
 }
 function my_substr2($str, $start, $length)
+
 {
-    $result = '';
-    for ($i = $start; isset($str[$i]) && $i < $start + $length; $i++) {
+    $result = "";
+    $str_len = 0;
+
+    while (isset($str[$str_len])) {
+        $str_len++;
+    }
+
+    if ($length < 0) {
+        $length = $str_len - $start + $length;
+    }
+
+    for ($i = $start; $i < $start + $length; $i++) {
+        if (!isset($str[$i])) break;
         $result .= $str[$i];
     }
+
+    return $result;
         
     
-    return $result;
 }
 
 
