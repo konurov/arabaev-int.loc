@@ -1,27 +1,5 @@
 <?php
-//var_dump($_GET);
-//var_dump($_POST). '<br>';
 
-//echo $_GET['name'] . '<br>';
-//echo $_GET['email'] . '<br>';
-//isset()
-//empty()
-
-//echo $x;
-
-/*$x = 0;
-if (isset($x)) {
-    echo 'Переменная существует';
-} else {
-    echo 'Переменная не существует';
-}*/
-
-/*$x = 5;
-if (!empty($x)) {
-    echo 'Переменная пуста';
-} else {
-    echo 'Переменная не пуста';
-}*/
 
 if(!empty($_POST['ageer'])) {
     echo var_dump($_POST);
